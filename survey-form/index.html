@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Favorite Snack</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="title">Your Favorite Snack</h1>
+        <p id="description">Thank you for helping the Council of Snacks understand demand for your favorite snacks!</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label"
+                    ><b>Enter Your Name:</b> <input type="text" id="name" name="name" placeholder="John Doe" required
+                /></label>
+
+                <label for="email" id="email-label"
+                    ><b>Enter Your Email:</b>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.org" required
+                /></label>
+
+                <label for="number" id="number-label"
+                    ><b>Enter Your Age (years):</b>
+                    <input type="number" id="number" name="age" placeholder="25" min="13" max="120" required
+                /></label>
+
+                <label for="dropdown"
+                    ><b>Your Favorite Snack:</b>
+                    <select id="dropdown" name="favorite-snack">
+                        <option value="">(select one)</option>
+                        <option value="1">Gala Biscuit</option>
+                        <option value="2">Ola! Papar</option>
+                        <option value="3">Tuc Biscuit</option>
+                        <option value="4">Marshmallows</option>
+                        <option value="5">Donut Biscuit</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Do you recommend the Council of Snacks to your friends?</b></legend>
+                <label for="recommend-yes"
+                    ><input type="radio" class="inline" id="recommend-yes" name="recommend" value="yes" checked /> Yes,
+                    I Recommend</label
+                >
+                <label for="recommend-no"
+                    ><input type="radio" class="inline" id="recommend-no" value="no" name="recommend" /> No, I
+                    Don't</label
+                >
+            </fieldset>
+
+            <fieldset>
+                <legend><b>How do you buy your snacks?</b></legend>
+                <label for="purchase-online">
+                    <input type="checkbox" class="inline" name="mode-of-purchase" id="purchase-online" value="online" />
+                    Online
+                </label>
+                <label for="purchase-shop">
+                    <input type="checkbox" class="inline" name="mode-of-purchase" id="purchase-shop" value="shop" /> Mom
+                    & Pop Store
+                </label>
+                <label for="purchase-supermarket">
+                    <input
+                        type="checkbox"
+                        class="inline"
+                        name="mode-of-purchase"
+                        id="purchase-supermarket"
+                        value="supermarket" />
+                    Supermarket
+                </label>
+                <label for="purchase-other">
+                    <input type="checkbox" class="inline" name="mode-of-purchase" id="purchase-other" value="other" />
+                    Other
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="additional-comments"
+                    ><b>Your Comments:</b>
+                    <textarea
+                        id="additional-comments"
+                        name="additional-comments"
+                        rows="5"
+                        columns="25"
+                        placeholder="I would like the ability to ship my snacks abroad..."></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Submit" />
+        </form>
+    </body>
+</html>
